@@ -23,7 +23,7 @@ const numbers = {
 let validator = 0
 
 
-function  romanToInt(s) {
+var romanToInt = function(s) {
     let result = 0
     let arr = []
     // o parâmetro S armazena a string de entrada da função ('LVIII'), e a variavel r divide os elementos num vetor ['L','V','I','I','I']
@@ -71,7 +71,7 @@ function  romanToInt(s) {
         result += numbers[el]
     })
 
-    console.log(result)
+    return result
 
 };
 
